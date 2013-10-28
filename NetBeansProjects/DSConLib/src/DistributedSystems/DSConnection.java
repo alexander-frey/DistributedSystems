@@ -91,11 +91,27 @@ public class DSConnection {
         if (m_Socket == null || m_Socket.isClosed() || !m_Socket.isConnected()) {
             throw new IOException("No connection established.");
         } else {
+            
+            if (data.length >128) {
+                System.out.println("ZU LANG");
+              byte[] trimdata = new byte[128];
+                    for ( int i = 0; i < trimdata.length; i++ )
+                    trimdata[i] = data[i] ;
             OutputStream s_out = m_Socket.getOutputStream();
+            s_out.write(trimdata);
+            s_out.write((byte) 13);
+            s_out.flush();
+            m_bytes_sent += data.length + 1;
+                    
+            }
+            else {
+                 OutputStream s_out = m_Socket.getOutputStream();
             s_out.write(data);
             s_out.write((byte) 13);
             s_out.flush();
             m_bytes_sent += data.length + 1;
+            }
+           
         }
     }
 
@@ -116,9 +132,14 @@ public class DSConnection {
 
         int val;
         while ((val = s_in.read()) != -1) { //-1 : end of stream (possibly network issue?)
-            if (val == 13) { //= '\n', message delimiter
-                break;
-            } else {
+            
+            if (val == 13 ) { //= '\n', message delimiter
+              break;
+            } 
+            else if (val == 10) {
+                
+            }
+            else {
                 messagebuffer.add((byte) val);
             }
         }
