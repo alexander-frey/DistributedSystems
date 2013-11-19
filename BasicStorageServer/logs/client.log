@@ -1,0 +1,7 @@
+2013-11-19 17:20:13,757 INFO  [main] root: SUCCESS: <mei,oma>
+2013-11-19 17:20:52,833 INFO  [main] root: SUCCESS: <dei,mudder>
+2013-11-19 17:24:14,095 INFO  [main] root: VALUE: null
+2013-11-19 17:24:16,883 INFO  [main] root: VALUE: dei
+2013-11-19 17:26:12,226 INFO  [main] root: NO VALUE FOUND FOR KEY: de
+2013-11-19 17:26:18,169 INFO  [main] root: SUCCESS: <de,de>
+2013-11-19 17:26:21,833 INFO  [main] root: VALUE: de
