@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="alexandfreysmbp" name="testing.ConnectionTest" skipped="0" tests="3" time="0.213" timestamp="2013-11-22T15:45:59">
+<testsuite errors="0" failures="0" hostname="alexandfreysmbp.fritz.box" name="testing.ConnectionTest" skipped="0" tests="3" time="0.609" timestamp="2013-11-22T16:24:44">
   <properties>
     <property name="netbeans.autoupdate.country" value="DE" />
     <property name="javac.test.classpath" value="..\DSConLib\dist\DSConLib.jar:libs\junit-4.10.jar:libs\log4j-1.2.17.jar:build/classes" />
@@ -41,7 +41,7 @@
     <property name="user.name" value="alexander-frey" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testing.ConnectionTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/test/results/TEST-testing.ConnectionTest.xml crashfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junitvmwatcher6165809624543329870.properties propsfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junit8284346977444252404.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testing.ConnectionTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/test/results/TEST-testing.ConnectionTest.xml crashfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junitvmwatcher1211903568201049166.properties propsfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junit1238837269732894161.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -124,7 +124,7 @@
     <property name="test.testing.dir" value="src/testing" />
     <property name="libs.ejb3-persistence.maven-pom" value="" />
     <property name="gopherProxySet" value="false" />
-    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|alexandfreysmbp" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|alexandfreysmbp.fritz.box" />
     <property name="libs.PostgreSQLDriver.maven-pom" value="" />
     <property name="java.class.version" value="51.0" />
     <property name="libs.eclipselink.javadoc" value="" />
@@ -310,9 +310,9 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
   </properties>
-  <testcase classname="testing.ConnectionTest" name="testIllegalPort" time="0.016" />
-  <testcase classname="testing.ConnectionTest" name="testConnectionSuccess" time="0.047" />
-  <testcase classname="testing.ConnectionTest" name="testUnknownHost" time="0.006" />
+  <testcase classname="testing.ConnectionTest" name="testConnectionSuccess" time="0.048" />
+  <testcase classname="testing.ConnectionTest" name="testUnknownHost" time="0.429" />
+  <testcase classname="testing.ConnectionTest" name="testIllegalPort" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

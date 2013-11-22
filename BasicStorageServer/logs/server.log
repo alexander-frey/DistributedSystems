@@ -11310,3 +11310,39 @@ java.net.SocketException: Socket closed
 2013-11-22 16:46:00,604 INFO  [Thread-0] root: Connected to localhost on port 50239
 2013-11-22 16:46:00,607 INFO  [Thread-0] root: Connected to localhost on port 50240
 2013-11-22 16:46:00,612 INFO  [Thread-0] root: Connected to localhost on port 50241
+2013-11-22 17:24:43,940 INFO  [Thread-0] root: Connected to localhost on port 50486
+2013-11-22 17:24:43,984 DEBUG [Thread-1] root: Socket has been disconnected.
+2013-11-22 17:24:44,023 INFO  [Thread-0] root: Connected to localhost on port 50487
+2013-11-22 17:24:44,029 INFO  [Thread-0] root: Connected to localhost on port 50488
+2013-11-22 17:24:44,030 DEBUG [Thread-3] root: Socket has been disconnected.
+2013-11-22 17:24:44,113 DEBUG [Thread-2] root: Socket has been disconnected.
+2013-11-22 17:24:45,030 INFO  [Thread-0] root: Connected to localhost on port 50489
+2013-11-22 17:24:45,535 DEBUG [Thread-4] root: Socket has been disconnected.
+2013-11-22 17:24:46,448 INFO  [Thread-0] root: Connected to localhost on port 50490
+2013-11-22 17:24:46,514 DEBUG [Thread-5] root: Serverthread << kvbm[ PUT: deleteTestValue = 'toDelete']
+2013-11-22 17:24:46,515 DEBUG [Thread-5] root: Serverthread >> kvbm[ PUT_SUCCESS: deleteTestValue = 'toDelete']
+2013-11-22 17:24:46,544 DEBUG [Thread-5] root: Serverthread << kvbm[ PUT: deleteTestValue = 'null']
+2013-11-22 17:24:46,545 DEBUG [Thread-5] root: Serverthread >> kvbm[ PUT_UPDATE: deleteTestValue = 'null']
+2013-11-22 17:24:46,548 DEBUG [Thread-5] root: Socket has been disconnected.
+2013-11-22 17:24:46,562 DEBUG [Thread-6] root: Serverthread << kvbm[ PUT: foo = 'bar']
+2013-11-22 17:24:46,563 DEBUG [Thread-6] root: Serverthread >> kvbm[ PUT_SUCCESS: foo = 'bar']
+2013-11-22 17:24:46,562 INFO  [Thread-0] root: Connected to localhost on port 50491
+2013-11-22 17:24:46,564 DEBUG [Thread-6] root: Serverthread << kvbm[ GET: foo = '']
+2013-11-22 17:24:46,565 DEBUG [Thread-6] root: Serverthread >> kvbm[ GET_SUCCESS: foo = 'bar']
+2013-11-22 17:24:46,567 DEBUG [Thread-6] root: Socket has been disconnected.
+2013-11-22 17:24:46,576 DEBUG [Thread-7] root: Serverthread << kvbm[ GET: an unset value = '']
+2013-11-22 17:24:46,577 DEBUG [Thread-7] root: Serverthread >> kvbm[ GET_ERROR: an unset value = NULL]
+2013-11-22 17:24:46,577 INFO  [Thread-0] root: Connected to localhost on port 50492
+2013-11-22 17:24:46,580 DEBUG [Thread-7] root: Socket has been disconnected.
+2013-11-22 17:24:46,584 DEBUG [Thread-8] root: Socket has been disconnected.
+2013-11-22 17:24:46,584 INFO  [Thread-0] root: Connected to localhost on port 50493
+2013-11-22 17:24:46,590 INFO  [Thread-0] root: Connected to localhost on port 50494
+2013-11-22 17:24:46,591 DEBUG [Thread-9] root: Serverthread << kvbm[ PUT: updateTestValue = 'initial']
+2013-11-22 17:24:46,593 DEBUG [Thread-9] root: Serverthread >> kvbm[ PUT_SUCCESS: updateTestValue = 'initial']
+2013-11-22 17:24:46,595 DEBUG [Thread-9] root: Serverthread << kvbm[ PUT: updateTestValue = 'updated']
+2013-11-22 17:24:46,596 DEBUG [Thread-9] root: Serverthread >> kvbm[ PUT_UPDATE: updateTestValue = 'updated']
+2013-11-22 17:24:46,598 DEBUG [Thread-9] root: Socket has been disconnected.
+2013-11-22 17:24:46,616 INFO  [Thread-0] root: Connected to localhost on port 50495
+2013-11-22 17:24:46,618 DEBUG [Thread-10] root: Serverthread << kvbm[ PUT: foo = 'bar']
+2013-11-22 17:24:46,622 DEBUG [Thread-10] root: Serverthread >> kvbm[ PUT_UPDATE: foo = 'bar']
+2013-11-22 17:24:46,625 DEBUG [Thread-10] root: Socket has been disconnected.

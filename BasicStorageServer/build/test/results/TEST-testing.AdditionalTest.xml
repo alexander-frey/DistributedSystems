@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="alexandfreysmbp" name="testing.AdditionalTest" skipped="0" tests="3" time="0.586" timestamp="2013-11-22T15:45:57">
+<testsuite errors="0" failures="0" hostname="alexandfreysmbp.fritz.box" name="testing.AdditionalTest" skipped="0" tests="3" time="0.384" timestamp="2013-11-22T16:24:43">
   <properties>
     <property name="netbeans.autoupdate.country" value="DE" />
     <property name="javac.test.classpath" value="..\DSConLib\dist\DSConLib.jar:libs\junit-4.10.jar:libs\log4j-1.2.17.jar:build/classes" />
@@ -41,7 +41,7 @@
     <property name="user.name" value="alexander-frey" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testing.AdditionalTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/test/results/TEST-testing.AdditionalTest.xml crashfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junitvmwatcher2357112416415084301.properties propsfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junit1037895100958032098.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testing.AdditionalTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/test/results/TEST-testing.AdditionalTest.xml crashfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junitvmwatcher4990245840586065515.properties propsfile=/Users/alexander-frey/Studium/Master WIN/SoSe 2013/Seba Master/Github/DistributedSystems/BasicStorageServer/build/junit1930433441016471493.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -124,7 +124,7 @@
     <property name="test.testing.dir" value="src/testing" />
     <property name="libs.ejb3-persistence.maven-pom" value="" />
     <property name="gopherProxySet" value="false" />
-    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|alexandfreysmbp" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|alexandfreysmbp.fritz.box" />
     <property name="libs.PostgreSQLDriver.maven-pom" value="" />
     <property name="java.class.version" value="51.0" />
     <property name="libs.eclipselink.javadoc" value="" />
@@ -310,9 +310,9 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
   </properties>
-  <testcase classname="testing.AdditionalTest" name="testUpdateDisconnected" time="0.054" />
-  <testcase classname="testing.AdditionalTest" name="testDoubleConnect" time="0.006" />
-  <testcase classname="testing.AdditionalTest" name="testGetDisconnected" time="0.001" />
+  <testcase classname="testing.AdditionalTest" name="testUpdateDisconnected" time="0.156" />
+  <testcase classname="testing.AdditionalTest" name="testDoubleConnect" time="0.005" />
+  <testcase classname="testing.AdditionalTest" name="testGetDisconnected" time="0.005" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[log4j:WARN No appenders could be found for logger (root).
 log4j:WARN Please initialize the log4j system properly.

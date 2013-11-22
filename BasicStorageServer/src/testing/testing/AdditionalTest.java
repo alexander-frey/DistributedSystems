@@ -10,7 +10,7 @@ import junit.framework.TestCase;
 
 public class AdditionalTest extends TestCase {
 	
-	// TODO add your test cases, at least 3
+	
     private KVStore kvClient;
 	
   
