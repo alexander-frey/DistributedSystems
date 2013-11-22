@@ -28,6 +28,7 @@ public class KVStore implements KVCommInterface {
 
     @Override
     public void connect() throws Exception {
+        
         connection.connect(address, port, 25000);
     }
 

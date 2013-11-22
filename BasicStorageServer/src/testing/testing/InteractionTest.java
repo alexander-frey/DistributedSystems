@@ -13,6 +13,7 @@ public class InteractionTest extends TestCase {
 	private KVStore kvClient;
 	
 	public void setUp() {
+            
 		kvClient = new KVStore("localhost", 50000);
 		try {
 			kvClient.connect();
@@ -34,6 +35,7 @@ public class InteractionTest extends TestCase {
 
 		try {
 			response = kvClient.put(key, value);
+                        System.out.print(response.getStatus());
 		} catch (Exception e) {
 			ex = e;
 		}

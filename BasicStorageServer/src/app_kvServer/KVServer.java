@@ -93,7 +93,7 @@ public class KVServer {
         LogSetup logSetup = new LogSetup("logs/server.log", Level.INFO);
 
         //Set up server
-        final KVServer sv = new KVServer(55555);
+        final KVServer sv = new KVServer(50000);
         KVServer.logger.log(Level.INFO, "Server initialized.");
         //Start server in its own thread.
         (new Thread() {
@@ -105,35 +105,6 @@ public class KVServer {
         }).start();
 
         //Set up a store, connect and put/get a bit, disconnect, repeat a couple of times.
-        try {
-            KVStore mystore = new KVStore("localhost", 55555);
-            KVServer.logger.log(Level.INFO, "KVStore initialized.");
-            for (int client = 0; client < 10; client++) {
-                mystore.connect();
-                KVServer.logger.log(Level.INFO, "KVStore connected.");
-                for (int request = 0; request < 10; request++) {
-                    mystore.put("req_" + request, "req_" + request + " client " + client);
-                    mystore.put("req_" + request, "req_" + request + " client update " + client);
-                    //maybe sleep, run multithreaded clients
-                    String kv = mystore.get("req_" + request).getValue();
-                    if (!kv.equals("req_" + request + " client update " + client)) { //should be
-                        KVServer.logger.log(Level.ERROR, "[ERROR] KVStore missmatch: " + request + ": " + kv + "!=" + request + "-" + client);
-                    }
-                }
-                mystore.disconnect();
-                KVServer.logger.log(Level.INFO, "KVStore disconnected.");
-            }
-        } catch (Exception ex) {
-            KVServer.logger.log(Level.ERROR, null, ex);
-        }
-
-        //Wait 10 seconds then shut the server down.
-        try {
-            Thread.sleep(10000);
-            sv.RequestShutdown();
-        } catch (InterruptedException ex) {
-            KVServer.logger.log(Level.ERROR, null, ex);
-        }
-
+       
     }
 }
