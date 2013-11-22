@@ -54,7 +54,7 @@ public class KVStore implements KVCommInterface {
 
     @Override
     public KVMessage put(String key, String value) throws IOException {
-        return sendreceive(StatusType.PUT_SUCCESS, key, value);
+        return sendreceive(StatusType.PUT, key, value);
     }
 
     @Override
