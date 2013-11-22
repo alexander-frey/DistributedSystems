@@ -14,11 +14,9 @@ public class InteractionTest extends TestCase {
 	
 	public void setUp() {
 		kvClient = new KVStore("localhost", 50000);
-               
 		try {
 			kvClient.connect();
 		} catch (Exception e) {
-                    
 		}
 	}
 
@@ -29,7 +27,6 @@ public class InteractionTest extends TestCase {
 	
 	@Test
 	public void testPut() {
-            
 		String key = "foo";
 		String value = "bar";
 		KVMessage response = null;
@@ -39,7 +36,6 @@ public class InteractionTest extends TestCase {
 			response = kvClient.put(key, value);
 		} catch (Exception e) {
 			ex = e;
-                        
 		}
 
 		assertTrue(ex == null && response.getStatus() == StatusType.PUT_SUCCESS);
